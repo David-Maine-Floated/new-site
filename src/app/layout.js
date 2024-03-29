@@ -32,11 +32,9 @@ export default function RootLayout({ children }) {
           <div className="mt-20 flex justify-center">
             <Drawer>
               <DrawerTrigger>
-                <Button style={{ width: '150px' }}>
-                <div className="w-[100px]"> 
+                {/* <Button style={{ width: '150px' }}> */}
                   Contact Info
-                </div>
-                </Button>
+                {/* </Button> */}
               </DrawerTrigger>
               <DrawerContent>
                 <DrawerHeader>
