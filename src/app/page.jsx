@@ -29,7 +29,7 @@ export default function Home() {
             </p>
             <p className="text-lg mt-10 max-w-[600px]">
               Currently I do freelance code projects, like building websites for
-              artists. I Also interns at hellomusictheory.com where I debug the
+              artists. I also intern at hellomusictheory.com where I debug the
               codebase, am working on a band name generator, and update/maintain
               the website.
             </p>
