@@ -1,3 +1,5 @@
+
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
@@ -24,59 +26,65 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex">
-        <nav className="flex flex-col justify-even h-screen bg-slate-100 text-blue w-48 fixed">
-          <div>
-            <div className="mt-20 flex justify-center">
-              <Drawer>
-                {/* <Button> */}
-                <DrawerTrigger>
-                  <Button>Contact Info</Button>
-                </DrawerTrigger>
-                {/* </Button> */}
-                <DrawerContent>
-                  <DrawerHeader>
-                    <DrawerTitle>Let's Connect!</DrawerTitle>
-                    <DrawerDescription>
-                      <Button>
-                        <a href="mailto:davidmainedev@gmail.com">
-                          Connect with an Email
-                        </a>
-                      </Button>
-                    </DrawerDescription>
-                    <DrawerDescription>
-                      <Button>
-                        <a href="https://www.linkedin.com/in/david-maine-548886b2/">
-                          LinkedIn
-                        </a>
-                      </Button>
-                    </DrawerDescription>
-                  </DrawerHeader>
-                  <DrawerFooter>
-                    <Button>Submit</Button>
-                    <DrawerClose>
-                      <Button variant="outline">Cancel</Button>
-                    </DrawerClose>
-                  </DrawerFooter>
-                </DrawerContent>
-              </Drawer>
-            </div>
+   <body className="flex">
+      <nav className="flex flex-col justify-even h-screen bg-slate-100 text-blue w-48 fixed">
+        <div>
+          <div className="mt-20 flex justify-center">
+            <Drawer>
+              <DrawerTrigger>
+                <Button style={{ width: '150px' }}>
+                <div className="w-[100px]"> 
+                  Contact Info
+                </div>
+                </Button>
+              </DrawerTrigger>
+              <DrawerContent>
+                <DrawerHeader>
+                  <DrawerTitle>Let's Connect!</DrawerTitle>
+                  <DrawerDescription>
+                    <Button>
+                      <a href="mailto:davidmainedev@gmail.com">
+                        Connect with an Email
+                      </a>
+                    </Button>
+                  </DrawerDescription>
+                  <DrawerDescription>
+                    <Button>
+                      <a href="https://www.linkedin.com/in/david-maine-548886b2/">
+                        LinkedIn
+                      </a>
+                    </Button>
+                  </DrawerDescription>
+                </DrawerHeader>
+                <DrawerFooter>
+                  <Button>Submit</Button>
+                  <DrawerClose>
+                    <Button variant="outline">Cancel</Button>
+                  </DrawerClose>
+                </DrawerFooter>
+              </DrawerContent>
+            </Drawer>
           </div>
-          <div className="flex justify-center h-100 max-h-100 mt-20">
-            <Link className="" href="/">
-              <Button>Home</Button>
-            </Link>
-          </div>
-          <div className="flex justify-center h-100 max-h-100 mt-20">
-            <Link className="" href="projects">
-              <Button>Projects</Button>
-            </Link>
-          </div>
-        </nav>
-        <div id="app" className="flex-1">
-          {children}
         </div>
-      </body>
+        <div className="flex justify-center h-100 max-h-100 mt-20">
+          <Link className="" href="/">
+            <Button style={{ width: '150px' }}>Home</Button>
+          </Link>
+        </div>
+        <div className="flex justify-center h-100 max-h-100 mt-20">
+          <Link href="projects">
+            <div>
+            <Button style={{ width: '150px' }}>
+              Projects
+            </Button>
+            </div>
+          </Link>
+        </div>
+      </nav>
+      <div id="app" className="flex-1">
+        {children}
+      </div>
+    </body>
     </html>
   );
 }

@@ -20,13 +20,13 @@ const ProjectCard = ({ imageUrl, description, title, videoUrl, codeUrl, liveUrl 
         src={videoUrl}
         autoPlay
         muted
-        onEnd={restartVideo}
+        onEnded={restartVideo}
         ref={videoRef}
       ></video>
       <div className="flex justify-center">
         <p className="text-3xl mt-5 mb-5">{title}</p>
       </div>
-      <p>{description}</p>
+      <p className="h-[300px]">{description}</p>
       <div className="mt-5 flex justify-evenly">
         <a
           className="w-[200px]"

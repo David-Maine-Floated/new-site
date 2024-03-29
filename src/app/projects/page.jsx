@@ -1,3 +1,5 @@
+// "use client";
+
 import ProjectCard from "@/components/ui/ProjectCard";
 
 const Projects = () => {
@@ -22,7 +24,13 @@ const Projects = () => {
           gitUrl="https://github.com/KooShnoo/track-shack"
           liveUrl="https://track-shack.netlify.app/"
         />
-        <ProjectCard />
+        <ProjectCard
+          videoUrl="/project_images/Cats 2.mov"
+          title="Cute Cat Club"
+          description="A fun webpage which shares interesting facts about different cat breeds. Built in Vanilla JS. Cat lovers unite!"
+          gitUrl="https://github.com/David-Maine-Floated/Cute-Cat-Club"
+          liveUrl="https://david-maine-floated.github.io/Cute-Cat-Club/"
+        />
       </div>
     </main>
   );
