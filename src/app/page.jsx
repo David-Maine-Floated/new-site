@@ -23,13 +23,11 @@ export default function Home() {
             </div>
 
             <p className="text-lg mt-10 max-w-[600px]">
-              I'm NYC based software engineer, specializing in React but has
-              experience as a fullstack developer. Loves to learn new skills and
-              thrives in a colaborative environment.
+              I'm NYC based full stack software engineer who specializes in React. I would love to help you build whatever it is your dreaming of.
             </p>
             <p className="text-lg mt-10 max-w-[600px]">
               Currently I do freelance code projects, like building websites for
-              artists. I also intern at hellomusictheory.com where I debug the
+              art galleries or artists. I also work at hellomusictheory.com where I debug the
               codebase, am working on a band name generator, and update/maintain
               the website.
             </p>

@@ -26,12 +26,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-   <body className="flex">
+   <body className="flex h-screen">
       <nav className="flex flex-col justify-even h-screen bg-slate-100 text-blue w-48 fixed">
         <div>
           <div className="mt-20 flex justify-center">
             <Drawer>
-              <DrawerTrigger>
+              <DrawerTrigger className="bg-black text-white w-[150px] h-[35px] text-sm rounded">
                 {/* <Button style={{ width: '150px' }}> */}
                   Contact Info
                 {/* </Button> */}
