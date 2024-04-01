@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
   <html lang="en">
    <body className="flex w-screen">
-      <nav className="flex items-center justify-center sm:justify-normal w-screen sm:flex-col justify-around h-[100px] bg-slate-100 text-blue fixed sm:w-150px sm:w-[200px] sm:h-screen sm:bg-purple">
+      <nav className="flex items-center flex-wrap justify-center sm:justify-normal w-screen sm:flex-col justify-around h-[100px] bg-slate-100 text-blue fixed sm:w-[200px] sm:h-screen sm:bg-purple">
         <div>
           <div className="sm:mt-20 flex justify-center">
             <Drawer>
@@ -80,6 +80,15 @@ export default function RootLayout({ children }) {
             <div>
             <Button style={{ width: '150px' }}>
               Work
+            </Button>
+            </div>
+          </Link>
+        </div>
+        <div className="flex justify-center h-100 max-h-100 sm:mt-20">
+          <Link href="music">
+            <div>
+            <Button style={{ width: '150px' }}>
+              Music
             </Button>
             </div>
           </Link>
