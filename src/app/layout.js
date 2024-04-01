@@ -25,11 +25,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-   <body className="flex h-screen">
-      <nav className="flex flex-col justify-even h-screen bg-slate-100 text-blue w-48 fixed">
+  <html lang="en">
+   <body className="flex">
+      <nav className="flex items-center justify-center sm:justify-normal w-screen sm:flex-col justify-around h-[100px] bg-slate-100 text-blue w-48 fixed sm:w-150px sm:w-[200px] sm:h-screen sm:bg-purple">
         <div>
-          <div className="mt-20 flex justify-center">
+          <div className="sm:mt-20 flex justify-center">
             <Drawer>
               <DrawerTrigger className="bg-black text-white w-[150px] h-[35px] text-sm rounded">
                 {/* <Button style={{ width: '150px' }}> */}
@@ -70,12 +70,12 @@ export default function RootLayout({ children }) {
             </Drawer>
           </div>
         </div>
-        <div className="flex justify-center h-100 max-h-100 mt-20">
+        <div className="flex justify-center h-100 max-h-100 sm:mt-20">
           <Link className="" href="/">
             <Button style={{ width: '150px' }}>Home</Button>
           </Link>
         </div>
-        <div className="flex justify-center h-100 max-h-100 mt-20">
+        <div className="flex justify-center h-100 max-h-100 sm:mt-20">
           <Link href="projects">
             <div>
             <Button style={{ width: '150px' }}>

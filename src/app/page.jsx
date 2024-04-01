@@ -1,10 +1,8 @@
-
-
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col justify-between p-24 ml-[12rem]">
+    <main className="flex min-h-screen mt-[50px] sm:mt-0 flex-col justify-between p-24 sm:ml-[12rem]">
       <div className="flex justify-center flex-col">
         <div className="flex ml-0 justify-evenly  flex-wrap">
           <img
@@ -23,13 +21,15 @@ export default function Home() {
             </div>
 
             <p className="text-lg mt-10 max-w-[600px]">
-              I'm NYC based full stack software engineer who specializes in React. I would love to help you build whatever it is your dreaming of.
+              I'm NYC based full stack software engineer who specializes in
+              React. I would love to help you build whatever it is your dreaming
+              of.
             </p>
             <p className="text-lg mt-10 max-w-[600px]">
               Currently I do freelance code projects, like building websites for
-              art galleries or artists. I also work at hellomusictheory.com where I debug the
-              codebase, am working on a band name generator, and update/maintain
-              the website.
+              art galleries or artists. I also work at hellomusictheory.com
+              where I debug the codebase, am working on a band name generator,
+              and update/maintain the website.
             </p>
           </div>
         </div>

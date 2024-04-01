@@ -4,10 +4,12 @@ import ProjectCard from "@/components/ui/ProjectCard";
 
 const Projects = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 ml-[6rem]">
+    <main className="flex min-w-[470px] min-h-screen flex-col items-center sm:p-24 sm:ml-[6rem]">
       <div>
-        <p className="text-4xl mb-10">Featured Work</p>
-      </div>        <div className="flex w-[100%] flex-wrap h-[500px] justify-around mx-10">
+        <p className="text-4xl mt-10 mb-10">Featured Work</p>
+      </div>
+      <div className="flex justify-center">
+        <div className="flex w-[100%] flex-wrap h-[500px] justify-around sm:mx-10">
           <ProjectCard
             imageUrl={"project_images/Maineum2.png"}
             videoUrl={"/project_images/Maineum-Demo-2.mov"}
@@ -31,6 +33,7 @@ const Projects = () => {
             liveUrl="https://david-maine-floated.github.io/Cute-Cat-Club/"
           />
         </div>
+      </div>
     </main>
   );
 };
