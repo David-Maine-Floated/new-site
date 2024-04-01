@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 
+
 export default function Home() {
   return (
     <main className="flex min-h-screen mt-[50px] sm:mt-0 flex-col justify-between p-24 sm:ml-[12rem]">
