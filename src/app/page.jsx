@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen mt-[50px] w-auto sm:mt-0 flex-col justify-between p-24 sm:ml-[12rem]">
+    <main className="flex min-h-screen overflow-hidden mt-[50px] w-full sm:mt-0 flex-col justify-between p-24 sm:ml-[12rem]">
       <div className="flex justify-center flex-col">
         <div className="flex ml-0 justify-evenly  flex-wrap">
           <img
-            className="rounded-full w-[300px] min-w-[300px]"
+            className="rounded-full sm:max-w-[300px]"
             src="/david_images/david-pic.png"
             alt="Picture of me"
           />

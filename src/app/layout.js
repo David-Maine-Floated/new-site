@@ -26,7 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
   <html lang="en">
-   <body className="flex w-screen">
+   <body className="flex w-full">
       <nav className="flex items-center flex-wrap justify-center sm:justify-normal w-screen sm:flex-col justify-around h-[100px] bg-slate-100 text-blue fixed sm:w-[200px] sm:h-screen sm:bg-purple">
         <div>
           <div className="sm:mt-20 flex justify-center">
