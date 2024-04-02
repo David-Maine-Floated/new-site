@@ -1,9 +1,8 @@
 import { Button } from "@/components/ui/button";
 
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen overflow-hidden mt-[50px] w-full sm:mt-0 flex-col justify-between p-24 sm:ml-[12rem]">
+    <main className="flex min-h-screen overflow-hidden box-border mt-[50px] w-full sm:mt-0 flex-col justify-between p-24 sm:pl-[240px]">
       <div className="flex justify-center flex-col">
         <div className="flex ml-0 justify-evenly  flex-wrap">
           <img
