@@ -2,7 +2,7 @@ const Music = () => {
   return (
     <div className="w-screen sm:w-full h-screen flex flex-col justify-normal sm:pl-[200px]">
       <div className="flex justify-center">
-        <p className="text-4xl mt-[140px] mx-10">
+        <p className="text-4xl mt-[140px] sm:mt-[100px] mx-10">
           When I'm not coding I'm making Music
         </p>
       </div>

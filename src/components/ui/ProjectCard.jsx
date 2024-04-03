@@ -21,7 +21,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className=" w-screen sm:w-[450px] px-5 pt-[40px]">
+    <div className=" w-screen sm:w-[450px] px-5 pt-[40px] box-border">
       {/* <img src={imageUrl} alt="" /> */}
       <video
         src={videoUrl}
