@@ -26,12 +26,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
   <html lang="en">
-   <body className="flex w-full h-screen box-border">
+   <body className="flex w-screen h-screen box-border">
       <nav className="flex items-center w-full flex-wrap justify-center sm:justify-normal sm:flex-col fixed justify-around h-[100px] bg-slate-100 text-blue  sm:w-[200px] sm:h-screen sm:bg-purple">
         <div>
           <div className="sm:mt-20 flex justify-center">
             <Drawer>
-              <DrawerTrigger className="bg-black text-white w-[150px] h-[35px] text-sm rounded">
+              <DrawerTrigger className="text-white w-[150px] h-[35px] text-sm rounded bg-slate-700">
                 {/* <Button style={{ width: '150px' }}> */}
                   Contact Info
                 {/* </Button> */}
@@ -40,21 +40,21 @@ export default function RootLayout({ children }) {
                 <DrawerHeader>
                   <DrawerTitle>Let's Connect!</DrawerTitle>
                   <DrawerDescription>
-                    <Button>
+                    <Button className="bg-slate-700">
                       <a href="mailto:davidmainedev@gmail.com">
                         Send an email to: davidmainedev@gmail.com
                       </a>
                     </Button>
                   </DrawerDescription>
                   <DrawerDescription>
-                    <Button>
+                    <Button className="bg-slate-700">
                       <a href="https://www.linkedin.com/in/david-maine-548886b2/" target="_blank">
                         LinkedIn
                       </a>
                     </Button>
                   </DrawerDescription>
                   <DrawerDescription>
-                    <Button>
+                    <Button className="bg-slate-700">
                       <a href="https://github.com/David-Maine-Floated" target="_blank">
                         GitHub
                       </a>
@@ -72,13 +72,13 @@ export default function RootLayout({ children }) {
         </div>
         <div className="flex justify-center h-100 max-h-100 sm:mt-20">
           <Link className="" href="/">
-            <Button style={{ width: '150px' }}>Home</Button>
+            <Button style={{ width: '150px', backgroundColor: 'rgb(51 65 85)'}}>Home</Button>
           </Link>
         </div>
         <div className="flex justify-center h-100 max-h-100 sm:mt-20">
           <Link href="projects">
             <div>
-            <Button style={{ width: '150px' }}>
+            <Button style={{ width: '150px', backgroundColor: 'rgb(51 65 85)' }}>
               Work
             </Button>
             </div>
@@ -87,7 +87,7 @@ export default function RootLayout({ children }) {
         <div className="flex justify-center h-100 max-h-100 sm:mt-20">
           <Link href="music">
             <div>
-            <Button style={{ width: '150px' }}>
+            <Button style={{ width: '150px', backgroundColor: 'rgb(51 65 85)'}}>
               Music
             </Button>
             </div>

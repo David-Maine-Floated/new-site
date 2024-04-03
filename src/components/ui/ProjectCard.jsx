@@ -21,7 +21,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className="w-[450px] pt-[40px]">
+    <div className=" w-screen sm:w-[450px] px-5 pt-[40px]">
       {/* <img src={imageUrl} alt="" /> */}
       <video
         src={videoUrl}
@@ -33,7 +33,7 @@ const ProjectCard = ({
       <div className="flex justify-center">
         <p className="text-3xl mt-5 mb-5">{title}</p>
       </div>
-      <p className="sm:h-[250px]">{description}</p>
+      <p className="sm:h-[250px] px-5">{description}</p>
       <div className="mt-5 flex justify-evenly">
         <a className="w-[200px]" href={liveUrl} target="_blank">
           <Button>

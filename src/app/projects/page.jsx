@@ -4,11 +4,11 @@ import ProjectCard from "@/components/ui/ProjectCard";
 
 const Projects = () => {
   return (
-    <main className="flex min-h-screen w-100 flex-col items-center sm:p-24 sm:ml-[12rem]">
+    <main className="flex min-h-screen w-screen flex-col items-center sm:p-24 sm:ml-[12rem]">
       <div>
-        <p className="text-4xl mt-10 mb-10">Featured Work</p>
+        <p className="text-4xl pt-[150px] sm:mt-10 mb-10">Featured Work</p>
       </div>
-      <div className="flex justify-around">
+      <div className="flex w-100 sm:w-100 justify-around">
         <div className="flex flex-wrap h-[500px] justify-around sm:mx-10">
           <ProjectCard
             imageUrl={"project_images/Maineum2.png"}
