@@ -6,7 +6,7 @@ const Music = () => {
           When I'm not coding I'm making Music
         </p>
       </div>
-      <div className="flex justify-around flex-wrap mt-[75px] px-5">
+      <div className="flex justify-around flex-wrap mt-[75px] px-5 sm:px-0">
         <a
           href="https://open.spotify.com/artist/0x4xCoWaOFd3WsKarzaxnW?si=zs1qwjt3QKGBLPoy8mlbHQ"
           target="_blank"
