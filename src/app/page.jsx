@@ -2,16 +2,17 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen overflow-hidden box-border mt-[50px] w-full sm:mt-0 flex-col justify-between p-24 sm:pl-[240px]">
-      <div className="flex justify-center flex-col">
-        <div className="flex ml-0 justify-evenly  flex-wrap">
+    <main className="flex min-h-screen w-full sm:box-border mt-[50px] sm:mt-0 flex-col justify-between p-10 sm:pl-[240px]">
+      <div className="flex justify-center w-full flex-col">
+        <div className="flex w-full justify-evenly flex-wrap pt-[45px] sm:pt-0">
           <img
-            className="rounded-full sm:max-w-[300px]"
+            className="rounded-full w-[250px] sm:max-w-[300px]"
             src="/david_images/david-pic.png"
             alt="Picture of me"
           />
           <div>
-            <p className="text-4xl">Hello! I'm David Maine</p>
+            <p className="text-4xl pl-20 pt-5">Hello!</p>
+            <p className="text-4xl ">I'm David Maine</p>
             <div className="flex justify-betweeen">
               {/* <img
                 className="w-[250px] h-auto"
