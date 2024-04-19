@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
   <html lang="en">
    <body className="flex w-screen h-screen box-border">
-      <nav className="flex items-center w-full flex-wrap justify-center sm:justify-normal sm:flex-col fixed justify-around h-[100px] bg-slate-100 text-blue  sm:w-[200px] sm:h-screen sm:bg-purple">
+      <nav className="flex items-center w-full flex-wrap justify-center sm:justify-normal sm:flex-col fixed justify-around h-[100px] bg-slate-100 text-blue  sm:w-[200px] sm:h-screen sm:bg-purple z-10">
         <div>
           <div className="sm:mt-20 flex justify-center">
             <Drawer>
