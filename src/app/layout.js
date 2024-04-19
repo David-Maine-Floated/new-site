@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { Button } from "@/components/ui/button.jsx";
+import PageWrapper from "@/components/ui/pageWrapper";
 
 import {
   Drawer,
@@ -15,6 +16,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -95,7 +97,7 @@ export default function RootLayout({ children }) {
         </div>
       </nav>
       <div id="app" className="flex-1">
-        {children}
+          {children}
       </div>
     </body>
     </html>
