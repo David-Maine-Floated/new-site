@@ -5,7 +5,7 @@ import PageWrapper from "@/components/ui/pageWrapper";
 const Projects = () => {
   return (
     <PageWrapper>
-      <main className="flex min-h-screen w-screen sm:w-screen box-border flex-col items-center sm:pl-[13rem]">
+      <main className="flex h-full w-full sm:w-screen box-border flex-col items-center sm:pl-[13rem]">
         <div>
           <p className="text-4xl pt-[150px] sm:pt-[50px] mb-10">Featured Work</p>
         </div>
