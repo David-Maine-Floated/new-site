@@ -37,7 +37,7 @@ const Music = () => {
         </div>
         <div >
           <motion.ul
-            className="flex justify-around flex-wrap mt-[75px] px-5 sm:px-0"
+            className="flex justify-evenly flex-wrap mt-[75px] px-5 sm:px-0"
             variants={container}
             initial="hidden"
             animate="visible"
