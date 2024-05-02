@@ -96,7 +96,7 @@ export default function RootLayout({ children }) {
           </Link>
         </div>
       </nav>
-      <div id="app" className="flex-1">
+      <div id="app" className="flex-1 h-full">
           {children}
       </div>
     </body>
