@@ -13,6 +13,8 @@ const Projects = () => {
           <ProjectCard
             imageUrl={"project_images/Maineum2.png"}
             videoUrl={"/project_images/Maineum-Demo-2.mov"}
+            liveUrl={"https://maineum.onrender.com/"}
+            gitUrl={"https://github.com/David-Maine-Floated/Maineum"}
             title="Maineum"
             description={
               "A full-stack website inspired by the popular blog website Medium. Features include creating a user accout, creating/updating/deleting articles with text and images.  The backend is built with Ruby on Rails, and the frontend with React-Redux."
