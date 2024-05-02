@@ -35,44 +35,48 @@ const Music = () => {
             When I'm not coding I'm making Music
           </p>
         </div>
-        <div >
+        <div>
           <motion.ul
             className="flex justify-evenly flex-wrap mt-[75px] px-5 sm:px-0"
             variants={container}
             initial="hidden"
             animate="visible"
           >
-            <motion.li key={0} className="item" variants={item}>
-              <a
-                href="https://open.spotify.com/artist/0x4xCoWaOFd3WsKarzaxnW?si=zs1qwjt3QKGBLPoy8mlbHQ"
-                target="_blank"
-                className="mb-10 hover:translate-x-1 hover:-translate-y-1  transition-transform duration-300"
-              >
-                <div className="flex justify-center">
-                  <p className="text-lg">Frankie Cosmos</p>
-                </div>
-                <img
-                  className="w-[385.5px] h-auto"
-                  src="/david_images/Frankie.png"
-                  alt=""
-                />
-              </a>
-            </motion.li>
-            <motion.li key={0} className="item" variants={item}></motion.li>
-            <a
-              className="mb-10 hover:translate-x-1 hover:-translate-y-1  transition-transform duration-300"
-              href="https://open.spotify.com/artist/4440TTGblbIlIldFRFVktf?si=UgyAli1zSa6PXpNLduzH7g"
-              target="_blank"
-            >
-              <div className="flex justify-center">
-                <p className="text-lg">David AM</p>
-              </div>
-              <img
-                className="w-[400px] h-auto"
-                src="/david_images/DavidAm.png"
-                alt=""
-              />
-            </a>
+            <div className="mb-10 hover:translate-x-1 hover:-translate-y-1  transition-transform duration-300">
+              <motion.li key={0} className="item" variants={item}>
+                <a
+                  className="mb-10 hover:translate-x-1 hover:-translate-y-1  transition-transform duration-300"
+                  href="https://open.spotify.com/artist/0x4xCoWaOFd3WsKarzaxnW?si=zs1qwjt3QKGBLPoy8mlbHQ"
+                  target="_blank"
+                >
+                  <div className="flex justify-center">
+                    <p className="text-lg">Frankie Cosmos</p>
+                  </div>
+                  <img
+                    className="w-[385.5px] h-auto"
+                    src="/david_images/Frankie.png"
+                    alt=""
+                  />
+                </a>
+              </motion.li>
+            </div>
+            <div className="mb-10 hover:translate-x-1 hover:-translate-y-1  transition-transform duration-300">
+              <motion.li key={1} className="item" variants={item}>
+                <a
+                  href="https://open.spotify.com/artist/4440TTGblbIlIldFRFVktf?si=UgyAli1zSa6PXpNLduzH7g"
+                  target="_blank"
+                >
+                  <div className="flex justify-center">
+                    <p className="text-lg">David AM</p>
+                  </div>
+                  <img
+                    className="w-[400px] h-auto"
+                    src="/david_images/DavidAm.png"
+                    alt=""
+                  />
+                </a>
+              </motion.li>
+            </div>
           </motion.ul>
         </div>
       </div>
