@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <PageWrapper>
-      <main className="flex w-full sm:box-border mt-[50px] sm:mt-0 flex-col justify-between sm:pl-[240px]">
-        <div className="flex justify-center w-full flex-col">
+    <main className="flex w-full sm:box-border mt-[50px] sm:mt-0 flex-col justify-between sm:pl-[240px]">
+        <PageWrapper>
+        <div className="flex justify-center w-full flex-col mt-[75px]">
           <div className="flex w-full justify-evenly flex-wrap pt-[4px] sm:pt-0">
             <img
               className="rounded-full w-[250px] sm:w-[300px] sm:h-[310px] sm:mt-10"
@@ -73,7 +73,7 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-      </main>
     </PageWrapper>
+      </main>
   );
 }
