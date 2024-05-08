@@ -3,7 +3,7 @@
 import PageWrapper from "@/components/ui/pageWrapper";
 
 import { motion } from "framer-motion";
-import MusicItem from "./musicItem";
+
 
 const container = {
   hidden: { opacity: 1, scale: 0 },

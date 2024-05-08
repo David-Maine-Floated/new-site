@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import PageWrapper from "@/components/ui/pageWrapper";
+// import { Button } from "@/components/ui/button";
+import PageWrapper from "../components/ui/pageWrapper";
 import { motion } from "framer-motion";
 
 export default function Home() {
