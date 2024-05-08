@@ -26,7 +26,7 @@ const item = {
 
 const Projects = () => {
   return (
-    <main className="flex h-full w-full sm:w-screen box-border flex-col items-center sm:pl-[13rem]">
+    <main className="flex h-full w-full sm:w-screen box-border flex-col items-center ">
       <PageWrapper>
         <div>
           <p className="text-4xl pt-[150px] sm:pt-[50px] mb-10">
@@ -35,7 +35,7 @@ const Projects = () => {
         </div>
       </PageWrapper>
       <div className="flex sm:w-100 justify-around sm:box-border">
-        <div className="flex flex-wrap h-[500px] justify-around sm:px-10">
+        <div className="flex w-full flex-wrap h-[500px] justify-around sm:px-10">
           <motion.ul
             className="container flex flex-wrap h-[500px] justify-around sm:px-10"
             variants={container}
