@@ -1,4 +1,4 @@
-
+"use client"
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
@@ -15,20 +15,22 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "../components/ui/drawer";
+import PageWrapper from "@/componentsui/pageWrapper";
 
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "David Maine Dev",
-  description: "Powered by Next.js",
-};
+// export const metadata = {
+//   title: "David Maine Dev",
+//   description: "Powered by Next.js",
+// };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex w-screen h-screen box-border">
+      <body className="flex w-screen h-screen box-border ">
         <nav className="flex items-center w-full flex-wrap justify-center sm:justify-normal sm:flex-col fixed justify-around h-[100px] bg-slate-100 text-blue  sm:w-[200px] sm:h-screen sm:bg-purple z-10">
+      <PageWrapper>
           <div>
             <div className="sm:mt-20 flex justify-center">
               <Drawer>
@@ -108,6 +110,7 @@ export default function RootLayout({ children }) {
               </div>
             </Link>
           </div>
+    </PageWrapper>
         </nav>
         <div id="app" className="flex-1 h-full">
           {children}

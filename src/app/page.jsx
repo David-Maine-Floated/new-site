@@ -23,12 +23,7 @@ export default function Home() {
                 <p className="text-4xl ">I'm David Maine</p>
               </div>
               <div className="flex justify-betweeen">
-                {/* <img
-                className="w-[250px] h-auto"
-                src="/david_images/better-git-garden.png"
-                alt=""
-              /> */}
-              </div>
+            </div>
 
               <p className="text-lg mt-10 max-w-[600px]">
                 I'm NYC based full stack software engineer who specializes in
