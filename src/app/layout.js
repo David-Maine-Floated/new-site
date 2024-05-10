@@ -110,7 +110,7 @@ export default function RootLayout({ children }) {
             </div>
           </NavPageWrapper>
         </nav>
-        <div id="app" className="flex-1 h-full">
+        <div id="app" className="flex-1 h-full w-full">
           {children}
         </div>
       </body>
