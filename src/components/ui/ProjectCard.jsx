@@ -21,8 +21,7 @@ const ProjectCard = ({
   };
 
   return (
-    <div className=" w-screen sm:w-[450px] px-5 pt-[40px] box-border">
-      {/* <img src={imageUrl} alt="" /> */}
+    <div className=" w-full sm:w-[450px] px-5 pt-[40px] box-border">
       <video
         src={videoUrl}
         autoPlay
