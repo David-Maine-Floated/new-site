@@ -35,7 +35,7 @@ const Music = () => {
             When I'm not coding I'm making Music
           </p>
         </div>
-        <div>
+        <div className="w-full">
           <motion.ul
             className="flex justify-evenly flex-wrap mt-[75px] px-5 sm:px-0"
             variants={container}
