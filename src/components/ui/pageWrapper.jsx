@@ -5,7 +5,7 @@ export default function PageWrapper({children}) {
 
 
     return (
-      <div>
+      <>
         <motion.div 
             animate={{opacity: 1, y: 15 }} 
             transition={{ delay: 0.25 }}
@@ -14,6 +14,6 @@ export default function PageWrapper({children}) {
             >
           {children}
         </motion.div>
-      </div>
+      </>
     );
 }

@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { Button } from "../components/ui/button.jsx";
-
+import NavPageWrapper from '@/componentsui/navPageWrapper'
 
 import {
   Drawer,
@@ -28,11 +28,10 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex w-screen h-screen box-border ">
-        <nav className="flex items-center w-full flex-wrap justify-center sm:justify-normal sm:flex-col fixed justify-around h-[100px] bg-slate-100 text-blue  sm:w-[200px] sm:h-screen sm:bg-purple z-10">
-      <PageWrapper>
-          <div>
-            <div className="sm:mt-20 flex justify-center">
+      <body className="flex w-screen h-screen box-border">
+        <nav className="flex w-full flex-wrap justify-center fixed justify-around h-[125px] sm:justify-normal sm:flex-col bg-slate-100 text-blue sm:w-[200px] sm:h-screen sm:bg-purple z-10">
+          <NavPageWrapper>
+            <div className=" w-[200px] sm:mt-20 flex justify-center ">
               <Drawer>
                 <DrawerTrigger className="text-white w-[150px] h-[35px] text-sm rounded bg-slate-700">
                   {/* <Button style={{ width: '150px' }}> */}
@@ -78,8 +77,7 @@ export default function RootLayout({ children }) {
                 </DrawerContent>
               </Drawer>
             </div>
-          </div>
-            <div className="flex justify-center h-100 max-h-100 sm:mt-20">
+            <div className="flex w-[200px]  justify-center h-100 max-h-100 sm:mt-20">
               <Link className="" href="/">
                 <Button
                   style={{ width: "150px", backgroundColor: "rgb(51 65 85)" }}
@@ -88,29 +86,29 @@ export default function RootLayout({ children }) {
                 </Button>
               </Link>
             </div>
-          <div className="flex justify-center h-100 max-h-100 sm:mt-20">
-            <Link href="projects">
-              <div>
-                <Button
-                  style={{ width: "150px", backgroundColor: "rgb(51 65 85)" }}
-                >
-                  Work
-                </Button>
-              </div>
-            </Link>
-          </div>
-          <div className="flex justify-center h-100 max-h-100 sm:mt-20">
-            <Link href="music">
-              <div>
-                <Button
-                  style={{ width: "150px", backgroundColor: "rgb(51 65 85)" }}
-                >
-                  Music
-                </Button>
-              </div>
-            </Link>
-          </div>
-    </PageWrapper>
+            <div className="flex pt-[10px] w-[200px] justify-center h-100 max-h-100 sm:mt-20">
+              <Link href="projects">
+                <div>
+                  <Button
+                    style={{ width: "150px", backgroundColor: "rgb(51 65 85)" }}
+                  >
+                    Work
+                  </Button>
+                </div>
+              </Link>
+            </div>
+            <div className="flex w-[200px]  pt-[10px] justify-center h-100 max-h-100 sm:mt-20">
+              <Link href="music">
+                <div>
+                  <Button
+                    style={{ width: "150px", backgroundColor: "rgb(51 65 85)" }}
+                  >
+                    Music
+                  </Button>
+                </div>
+              </Link>
+            </div>
+          </NavPageWrapper>
         </nav>
         <div id="app" className="flex-1 h-full">
           {children}
