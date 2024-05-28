@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="flex w-full px-[30px] sm:px-[0px] sm:box-border mt-[50px] sm:mt-0 flex-col justify-between sm:pl-[240px]">
+    <main className="flex w-full px-[30px] sm:px-[0px] sm:box-border mt-[50px] sm:mt-0 flex-col justify-between sm:pl-[20px]">
         <PageWrapper>
         <div className="flex justify-center w-full flex-col mt-[75px]">
           <div className="flex w-full justify-evenly flex-wrap pt-[4px] sm:pt-0">

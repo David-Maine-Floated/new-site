@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { Button } from "../components/ui/button.jsx";
-import NavPageWrapper from '@/componentsui/navPageWrapper'
+import NavPageWrapper from "@/componentsui/navPageWrapper";
 
 import {
   Drawer,
@@ -17,6 +17,14 @@ import {
 } from "../components/ui/drawer";
 import PageWrapper from "@/componentsui/pageWrapper";
 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,8 +36,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="flex w-screen h-screen box-border">
-        <nav className="flex w-full flex-wrap justify-center fixed justify-around h-[125px] sm:justify-normal sm:flex-col bg-slate-100 text-blue sm:w-[200px] sm:h-screen sm:bg-purple z-10">
+      <body className="flex justify-center w-screen h-screen box-border">
+        <nav className="invisible sm:visible flex w-full flex-wrapfixed justify-around h-[125px] sm:justify-normal sm:flex-col bg-slate-100 text-blue sm:w-[200px] sm:h-screen sm:bg-purple z-10">
           <NavPageWrapper>
             <div className=" w-[200px] sm:mt-20 flex justify-center ">
               <Drawer>
@@ -110,6 +118,55 @@ export default function RootLayout({ children }) {
             </div>
           </NavPageWrapper>
         </nav>
+
+        <div className="visible sm:hidden">
+          <Drawer>
+            <div className="flex justify-center">
+              <DrawerTrigger className="text-white w-[150px] h-[35px] text-sm rounded bg-slate-700">
+                {/* <Button style={{ width: '150px' }}> */}
+                Contact Info
+                {/* </Button> */}
+              </DrawerTrigger>
+            </div>
+            <DrawerContent>
+              <DrawerHeader>
+                <DrawerTitle>Let's Connect!</DrawerTitle>
+                <DrawerDescription>
+                  <Button className="bg-slate-700">
+                    <a href="mailto:davidmainedev@gmail.com">
+                      Send an email to: davidmainedev@gmail.com
+                    </a>
+                  </Button>
+                </DrawerDescription>
+                <DrawerDescription>
+                  <Button className="bg-slate-700">
+                    <a
+                      href="https://www.linkedin.com/in/david-maine-548886b2/"
+                      target="_blank"
+                    >
+                      LinkedIn
+                    </a>
+                  </Button>
+                </DrawerDescription>
+                <DrawerDescription>
+                  <Button className="bg-slate-700">
+                    <a
+                      href="https://github.com/David-Maine-Floated"
+                      target="_blank"
+                    >
+                      GitHub
+                    </a>
+                  </Button>
+                </DrawerDescription>
+              </DrawerHeader>
+              <DrawerFooter>
+                <DrawerClose>
+                  <Button variant="outline">Close</Button>
+                </DrawerClose>
+              </DrawerFooter>
+            </DrawerContent>
+          </Drawer>
+        </div>
         <div id="app" className="flex-1 h-full w-full">
           {children}
         </div>
