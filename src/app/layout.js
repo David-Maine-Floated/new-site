@@ -122,9 +122,9 @@ export default function RootLayout({ children }) {
         <div className="visible sm:hidden">
           <Drawer>
             <div className="flex justify-left">
-              <DrawerTrigger className="text-white w-[150px] h-[35px] text-sm rounded bg-slate-700">
+              <DrawerTrigger className="text-white w-[150px] h-[35px] text-sm rounded">
                 {/* <Button style={{ width: '150px' }}> */}
-                Menu
+                <img src="project_images/hamburger.svg" alt="" />
                 {/* </Button> */}
               </DrawerTrigger>
             </div>
@@ -145,7 +145,7 @@ export default function RootLayout({ children }) {
                     <a href="/">Home</a>
                   </Button>
                 </DrawerDescription>
-                <DrawerTitle>Let's Connect!</DrawerTitle>
+                {/* <DrawerTitle>Let's Connect!</DrawerTitle> */}
                 <DrawerDescription>
                   <Button className="bg-slate-700">
                     <a href="mailto:davidmainedev@gmail.com">
