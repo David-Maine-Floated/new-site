@@ -26,7 +26,7 @@ const item = {
 
 const Projects = () => {
   return (
-    <main className="flex h-full w-screen box-border sm:w-full sm:pl-[150px] flex-col items-center ">
+    <main className="flex h-full w-screen box-border sm:w-full sm:pl-[20px] flex-col items-center ">
       <PageWrapper>
         <div>
           <p className="text-4xl pt-[150px] sm:pt-[50px] mb-10">

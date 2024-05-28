@@ -29,7 +29,7 @@ const Music = () => {
   return (
     // <PageWrapper>
     <>
-      <div className="w-full h-full flex flex-col justify-normal sm:pl-[200px]">
+      <div className="w-full h-full flex flex-col justify-normal sm:pl-[20px]">
         <div className="flex justify-center">
           <p className="text-4xl mt-[140px] sm:mt-[100px] mx-10">
             When I'm not coding I'm making Music
