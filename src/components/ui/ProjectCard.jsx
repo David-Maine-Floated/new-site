@@ -8,7 +8,7 @@ const ProjectCard = ({
   description,
   title,
   videoUrl,
-  codeUrl,
+  gitUrl,
   liveUrl,
 }) => {
   let videoRef = useRef(null);
@@ -39,7 +39,7 @@ const ProjectCard = ({
             <p>Visit the Live site</p>{" "}
           </Button>
         </a>
-        <a className="w-[200px]" href={codeUrl} target="_blank">
+        <a className="w-[200px]" href={gitUrl} target="_blank">
           <Button>
             <p>See the code</p>
           </Button>
