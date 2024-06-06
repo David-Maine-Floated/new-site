@@ -50,6 +50,8 @@ const Projects = () => {
                 description={
                   "A full-stack website inspired by the popular blog website Medium. Features include creating a user accout, creating/updating/deleting articles with text and images. Tech Stack: React, Redux, Ruby on Rails, Active Record, PostgreSQL, AWS. Jquery"
                 }
+                gitUrl="https://github.com/David-Maine-Floated/Maineum"
+                liveUrl="https://maineum.onrender.com/"
               />
             </motion.li>
             <motion.li key={2} className="item" variants={item}>
