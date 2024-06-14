@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "../components/ui/button.jsx";
 import NavPageWrapper from "@/componentsui/navPageWrapper";
 
+
 import {
   Drawer,
   DrawerClose,
@@ -15,16 +16,9 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "../components/ui/drawer";
-import PageWrapper from "@/componentsui/pageWrapper";
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +28,8 @@ const inter = Inter({ subsets: ["latin"] });
 // };
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en">
       <body className="flex justify-center w-screen h-lvh box-border fixed flex-col sm:flex-row">

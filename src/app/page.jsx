@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <main className="flex w-full px-[30px] sm:px-[0px] sm:box-border mt-[50px] sm:mt-0 flex-col justify-between sm:pl-[20px]">
-        <PageWrapper>
+      <PageWrapper>
         <div className="flex justify-center w-full flex-col mt-[75px]">
           <div className="flex w-full justify-evenly flex-wrap pt-[4px] sm:pt-0">
             <img
@@ -22,19 +22,17 @@ export default function Home() {
               <div className="flex justify-center">
                 <p className="text-4xl ">I'm David Maine</p>
               </div>
-              <div className="flex justify-betweeen">
-            </div>
+              <div className="flex justify-betweeen"></div>
 
               <p className="text-lg mt-10 max-w-[600px]">
-                I'm NYC based full stack software engineer who specializes in
-                React. I would love to help you build whatever it is your
+                NYC based full stack software engineer who specializes in React
+                and Next.js. I would love to help you build whatever it is your
                 dreaming of.
               </p>
               <p className="text-lg mt-10 max-w-[600px]">
-                Currently I do freelance code projects, like building websites
-                for art galleries or artists. I also work at
-                hellomusictheory.com where I debug the codebase, am working on a
-                band name generator, and update/maintain the website.
+                From Restuarants, Artists, to Startups in the
+                Health/Wellness product space, I help people and businesses with
+                their technology needs.
               </p>
             </div>
           </div>
@@ -73,7 +71,7 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-    </PageWrapper>
-      </main>
+      </PageWrapper>
+    </main>
   );
 }

@@ -1,5 +1,5 @@
-"use client";
-import Maineum from "@/app/projects/maineum/page";
+// "use client";
+
 import { useRef } from "react";
 import { Button } from "./button";
 

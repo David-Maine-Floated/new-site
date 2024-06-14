@@ -2,7 +2,9 @@
 
 import ProjectCard from "@/components/ui/ProjectCard";
 import PageWrapper from "@/components/ui/pageWrapper";
-import { motion } from "framer-motion";
+import { motion, useMotionValueEvent, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -25,14 +27,31 @@ const item = {
 };
 
 const Projects = () => {
+
+  const containerRef = useRef(null);
+  const { scrollYProgress, scrollY } = useScroll({container: containerRef});
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    console.log("Page scroll: ", latest);
+  });
+
+
+  const scale = useTransform(scrollYProgress, [0, 1], [0.2, 2]);
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    console.log("x changed to", latest);
+  });
+
+
   return (
-    <main className="flex h-full w-screen box-border sm:w-full sm:pl-[20px] flex-col items-center ">
+    <main ref={containerRef} className="flex relative h-full w-screen box-border sm:w-full sm:pl-[20px] flex-col items-center ">
       <PageWrapper>
-        <div>
+        <p className="text-4xl pt-[150px] sm:pt-[50px] mb-10">Featured Work</p>
+
+        {/* <div>
           <p className="text-4xl pt-[150px] sm:pt-[50px] mb-10">
             Featured Work
           </p>
-        </div>
+        </div> */}
       </PageWrapper>
       <div className="w-full box-border">
         <div className="flex w-full flex-wrap box-border h-[500px] sm:px-10">
@@ -54,6 +73,7 @@ const Projects = () => {
                 liveUrl="https://maineum.onrender.com/"
               />
             </motion.li>
+
             <motion.li key={2} className="item" variants={item}>
               <ProjectCard
                 videoUrl="/project_images/Track-Shack-medium.mov"
