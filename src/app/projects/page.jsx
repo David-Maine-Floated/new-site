@@ -43,7 +43,10 @@ const Projects = () => {
 
 
   return (
-    <main ref={containerRef} className="flex relative h-full w-screen box-border sm:w-full sm:pl-[20px] flex-col items-center ">
+    <main
+      ref={containerRef}
+      className="flex relative h-full w-screen box-border sm:w-full sm:pl-[20px] flex-col items-center "
+    >
       <PageWrapper>
         <p className="text-4xl pt-[150px] sm:pt-[50px] mb-10">Featured Work</p>
 
@@ -60,10 +63,20 @@ const Projects = () => {
             variants={container}
             initial="hidden"
             animate="visible"
+            imageUrl="/DLG.png"
           >
+            <motion.li key={0} className="item" variants={item}>
+              <ProjectCard
+                imageUrl="/david_images/DLG.png"
+                title="Date Like Goblins"
+                description={
+                  "A new dating platform, allows users to virtually date and play video games. I was the second engineer on the team, helping to finish building the beta for launch in Summer 2024. I built out core features in their entirety: adding tables to the database, writing complex SQL queries, writing out GraphQL queries and mutations in both backend and fronted, and finally building the associated UI. Feature contributions include such as user blocking, search filtering, and search pagination. Tools used: Ruby on Rails, GraphQL, React Native, Typescript, PostgreSQL, SQL, Active Record, Style sheets"
+                }
+                liveUrl="https://www.likegoblins.com/date"
+              />
+            </motion.li>
             <motion.li key={1} className="item" variants={item}>
               <ProjectCard
-                imageUrl={"project_images/Maineum2.png"}
                 videoUrl={"/project_images/Maineum-Demo-2.mov"}
                 title="Maineum"
                 description={
