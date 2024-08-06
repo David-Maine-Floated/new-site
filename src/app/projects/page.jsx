@@ -80,7 +80,7 @@ const Projects = () => {
                 videoUrl={"/project_images/Maineum-Demo-2.mov"}
                 title="Maineum"
                 description={
-                  "A full-stack website inspired by the popular blog website Medium. Features include creating a user accout, creating/updating/deleting articles with text and images. Tech Stack: React, Redux, Ruby on Rails, Active Record, PostgreSQL, AWS. Jquery"
+                  "A full-stack website inspired by the popular blog website Medium. Feature contributions include creating a user accout, creating/updating/deleting articles with text and images. Tech Stack: React, Redux, Ruby on Rails, Active Record, PostgreSQL, AWS. Jquery"
                 }
                 gitUrl="https://github.com/David-Maine-Floated/Maineum"
                 liveUrl="https://maineum.onrender.com/"
